@@ -1,0 +1,31 @@
+{
+  "name": "score-sheet-interview",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "testWA": "jest --watchAll --detectOpenHandles"
+  },
+  "dependencies": {
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "18.7.14",
+    "@types/react": "18.0.18",
+    "@types/react-dom": "18.0.6",
+    "@types/uuid": "latest",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "enzyme": "^3.11.0",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "jest": "^27.4.5",
+    "typescript": "4.4.2"
+  }
+}
