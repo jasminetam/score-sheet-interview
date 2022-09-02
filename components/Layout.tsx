@@ -17,12 +17,6 @@ function Layout({ children }: Props) {
         <title>{lang.studentScoreSheet}</title>
         <meta name="description" content="Score Sheet" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;400&family=Noto+Serif+HK:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <div className="layout" data-test="components-Layout">
         <main>{children}</main>
