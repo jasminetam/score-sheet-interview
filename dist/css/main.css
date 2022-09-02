@@ -116,6 +116,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .input-form .score {
   padding-bottom: 10px;
@@ -128,6 +130,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .input-form .class {
   padding-bottom: 10px;
