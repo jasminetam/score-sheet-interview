@@ -1,5 +1,5 @@
 import { studDataProps } from 'interface/interface';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { translation_zh } from 'locales/zh';
 import { translation_en } from 'locales/en';
