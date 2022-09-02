@@ -1,5 +1,6 @@
 export const translation_en = {
-    enterYourDetails: "Enter your Details",
+    studentScoreSheet: "Student Score Sheet",
+    enterDetails: "Enter Details",
     studentName: "Student Name",
     enterStudentName: "Enter Student Name",
     score: "Score",
@@ -10,6 +11,11 @@ export const translation_en = {
     to: "to",
     filter: "Filter",
     clearFilter: "Clear Filter",
+    function: "Function",
     delete: "Delete",
-    clearAllData: "Clear All Data"
+    clearAllData: "Clear All Data",
+    noStudentData: "No Student Data",
+    noRecord: "No record founded, please try again",
+    allRightReserved: "All Right Reserved",
+    close: "Close Filter"
 }

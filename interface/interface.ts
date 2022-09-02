@@ -1,13 +1,13 @@
 export interface dataProps {
-  studname: string;
+  studName: string;
   score: number;
-  class: string;
+  studClass: string;
 }
 export interface studDataProps {
   id: string;
   data: {
-    studname: string;
+    studName: string;
     score: number;
-    class: string;
+    studClass: string;
   };
 }

@@ -1,18 +1,23 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import { findJSXByAttr } from '__test__/testUtils'
-import Layout from '../components/Layout'
+import { shallow } from 'enzyme';
+import React from 'react';
+import Layout from 'components/Layout';
 
-const setup = (props = {}, state = null) => {
-  return shallow(<Layout {...props} />)
-}
+describe('Layout test', () => {
+  const setup = (props = {}, state = null) => {
+    return shallow(<Layout {...props} />);
+  };
 
-test('check if Layout runs successfully', () => {
-  const wrapper = setup()
-})
+  const findJSXByAttr = (name, wrapper) => {
+    return wrapper.find(`[data-test="${name}"]`);
+  };
 
-test('check if components-Layout runs successfully', () => {
-  const wrapper = setup()
-  const Layout = findJSXByAttr(wrapper, 'components-Layout')
-  expect(Layout.length).toBe(1)
-})
+  it('expect Layout component is rendered without crashing', () => {
+    const wrapper = setup();
+  });
+
+  it('expect components-Layout is rendered', () => {
+    const wrapper = setup();
+    const Layout = findJSXByAttr('components-Layout', wrapper);
+    expect(Layout.length).toBe(1);
+  });
+});

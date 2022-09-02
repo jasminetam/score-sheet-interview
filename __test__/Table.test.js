@@ -1,18 +1,23 @@
-import React from 'react'
-import { shallow } from 'enzyme'
-import { findJSXByAttr } from '__test__/testUtils'
-import Table from '../components/Table'
+import { shallow } from 'enzyme';
+import React from 'react';
+import Table from 'components/Table';
 
-const setup = (props = {}, state = null) => {
-  return shallow(<Table {...props} />)
-}
+describe('Table test', () => {
+  const setup = (props = {}, state = null) => {
+    return shallow(<Table {...props} />);
+  };
 
-test('check if Table runs successfully', () => {
-  const wrapper = setup()
-})
+  const findJSXByAttr = (name, wrapper) => {
+    return wrapper.find(`[data-test="${name}"]`);
+  };
 
-test('check if components-Table runs successfully', () => {
-  const wrapper = setup()
-  const Table = findJSXByAttr(wrapper, 'components-Table')
-  expect(Table.length).toBe(1)
-})
+  it('expect Table component is rendered without crashing', () => {
+    const wrapper = setup();
+  });
+
+  it('expect components-Table is rendered', () => {
+    const wrapper = setup();
+    const Table = findJSXByAttr('components-Table', wrapper);
+    expect(Table.length).toBe(1);
+  });
+});

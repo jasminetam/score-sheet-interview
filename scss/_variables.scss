@@ -1,19 +1,33 @@
-$theme-light: #F1F0CC;
-$theme-ecru: #D5BF86;
-$theme-shadow: #8D775F;
-$theme-dark: #363636;
-$theme-red: #A71D31;
-$theme-sienna: #3F0D12;
+$theme-light: #F1F2EB;
+$theme-timber: #D8DAD3;
+$theme-ebony: #566246;
+$theme-dark: #4A4A48;
+$theme-green: #A4C2A5;
+$font-en: 'Noto Serif Display', serif;
+$font-zh: 'Noto Serif HK', serif;
 
 
-.flex {
+
+@mixin flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.flex-col {
+@mixin flex-col {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin padding-x {
+    padding-left: 20px;
+    padding-right: 20px;
 }
