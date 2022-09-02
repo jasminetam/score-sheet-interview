@@ -26,10 +26,13 @@ const Home: NextPage = () => {
       <Layout>
         <Header />
         <Input setStudData={setStudData} classes={classes} />
-        <hr />
-        <FilterBtn show={show} setShow={setShow} />
-
-        {data?.length > 0 && show && (
+        {data?.length > 0 && (
+          <>
+            <hr />
+            <FilterBtn show={show} setShow={setShow} />
+          </>
+        )}
+        {show && (
           <Filter
             data={data}
             setFilteredData={setFilteredData}

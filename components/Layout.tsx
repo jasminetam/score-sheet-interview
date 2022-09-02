@@ -20,7 +20,7 @@ function Layout({ children }: Props) {
       </Head>
       <div className="layout" data-test="components-Layout">
         <main>{children}</main>
-        <footer>All Right Reserved</footer>
+        <footer>{lang.allRightReserved}</footer>
       </div>
     </>
   );
