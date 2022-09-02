@@ -15,15 +15,15 @@ If you would like to use this on localhost, please download the project and open
 
 Type the following on the terminal to download all the packages
 
-## yarn 
+### yarn 
 or
-## npm install
+### npm install
 
 Then run the following command to run the development server
 
-npm run dev
-# or
-yarn dev
+### npm run dev
+or
+### yarn dev
 
 
 ### Reminder: All the data will be stored in the local storage on the client side
