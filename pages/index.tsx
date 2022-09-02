@@ -27,23 +27,16 @@ const Home: NextPage = () => {
         <Header />
         <Input setStudData={setStudData} classes={classes} />
         <hr />
-        {data?.length > 1 &&
-          (show ? (
-            <>
-              <Filter
-                data={data}
-                setFilteredData={setFilteredData}
-                classes={classes}
-              />
-              <FilterBtn show={show} setShow={setShow} />
-              <hr />
-            </>
-          ) : (
-            <>
-              <FilterBtn show={show} setShow={setShow} />
-              <hr />
-            </>
-          ))}
+        <FilterBtn show={show} setShow={setShow} />
+
+        {data?.length > 0 && show && (
+          <Filter
+            data={data}
+            setFilteredData={setFilteredData}
+            classes={classes}
+          />
+        )}
+        <hr />
         <Table data={data} setStudData={setStudData} />
       </Layout>
     </>
